@@ -6,13 +6,13 @@ $(() => {
 
   function slideShow() {
     $('.slideshow > div:first')
-      .fadeOut(2500)
+      .fadeOut(1950)
       .next()
       .fadeIn()
       .end()
       .appendTo('.slideshow')
   }
 
-  setInterval(slideShow, 2500)
+  setInterval(slideShow, 2000)
 
 })
