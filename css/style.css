@@ -11,16 +11,16 @@
   align-items: center; }
 
 .top {
-  border: 1px solid green; }
+  border: 0px solid green; }
 
 .explodeWrapper {
   width: 940px;
   height: 550px;
-  border: 1px solid cyan;
+  border: 0px solid cyan;
   text-align: center;
   position: relative; }
   .explodeWrapper img {
-    border: 1px solild red;
+    border: 0px solild red;
     position: absolute;
     top: 0;
     left: 0;
@@ -30,12 +30,12 @@
 .leftCol, .rightCol {
   width: 5vw;
   height: 100vh;
-  border: 1px solid lime;
+  border: 0px solid lime;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid magenta; }
+  border: 0px solid magenta; }
 
 .leftCol a {
   -ms-transform: rotate(-90deg);
@@ -55,7 +55,7 @@
 
 .navArrow {
   height: 2.5vh;
-  border: 1px solid cyan;
+  border: 0px solid cyan;
   opacity: 0.95;
   transition-timing-function: ease-in;
   -webkit-transition: opacity 2s;
@@ -78,7 +78,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  border: 1px solid blue;
+  border: 0px solid blue;
   background-color: white;
   overflow: hidden;
   display: flex;
@@ -93,7 +93,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid lime; }
+  border: 0px solid lime; }
 
 .top {
   width: 90vw;
@@ -102,12 +102,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red; }
+  border: 0px solid red; }
 
 .center {
   width: 940px;
   height: 550px;
-  border: 1px solid cyan;
+  border: 0px solid cyan;
   text-align: center;
   position: relative; }
   .center img {
@@ -127,24 +127,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
+  border: 0px solid green;
   color: #333;
   font-family: 'Montserrat', monospace; }
   .bottom .description {
-    border: 1px solid pink;
+    border: 0px solid pink;
     font-size: 17px;
     text-align: justify; }
     .bottom .description .descriptionHeader {
-      border: 1px solid pink;
+      border: 0px solid pink;
       border-bottom: 1px solid #333;
       padding-bottom: .25em; }
     .bottom .description .descriptionText {
       padding-top: .25em;
-      border: 1px solid pink; }
+      border: 0px solid pink; }
 
 .text {
   width: 50vw;
-  border: 1px solid pink;
+  border: 0px solid pink;
   font-size: 17px;
   text-align: justify; }
 
