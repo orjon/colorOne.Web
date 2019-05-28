@@ -1,18 +1,40 @@
-
 $(() => {
 
-  $('.slideshow > div:gt(0)').hide()
+  const animationSpeed= 3600
+
+  $('.colorFade > div:gt(0)').hide()
+  $('.timeFade > div:gt(0)').hide()
 
 
-  function slideShow() {
-    $('.slideshow > div:first')
-      .fadeOut(1950)
+  $('.colorFade').click(function(){
+    $('.timeFade').toggleClass('hidden')
+  })
+
+  $('.timeFade').click(function(){
+    $('.timeFade').toggleClass('hidden')
+  })
+
+
+
+  function colorFade() {
+    $('.colorFade > div:first')
+      .fadeOut(animationSpeed)
       .next()
       .fadeIn()
       .end()
-      .appendTo('.slideshow')
+      .appendTo('.colorFade')
   }
 
-  setInterval(slideShow, 2000)
+  function timeFade() {
+    $('.timeFade > div:first')
+      .fadeOut(animationSpeed)
+      .next()
+      .fadeIn(animationSpeed)
+      .end()
+      .appendTo('.timeFade')
+  }
+
+  setInterval(colorFade, animationSpeed)
+  setInterval(timeFade, animationSpeed)
 
 })

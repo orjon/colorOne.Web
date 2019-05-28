@@ -1,25 +1,26 @@
 @import 'variables';
-@import 'slideshow';
+@import 'flexLayouts';
+@import 'details';
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   user-select: none;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  border: $devborder solid green;
+  border: $devBorder solid green;
   background-color: $background;
   // overflow: hidden;
 }
 
 
 .flexColCenter {
-  border: $devborder solid red;
+  border: $devBorder solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +30,7 @@ body {
 .centerWrapper {
   width: $imageWidth;
   height: $imageHeight;
-  border: $devborder solid cyan;
+  border: $devBorder solid cyan;
   text-align: center;
   position: relative;
 
@@ -39,13 +40,27 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    transition-timing-function: ease-in;
-    -webkit-transition: opacity 2.5s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 2.5s;
+    cursor:pointer;
   }
 
+  .hidden {
+    display: none;
+  }
 }
 
-.opacity {
-  opacity: 0;
+
+.bottomWrapper {
+  position: absolute;
+  bottom: 0%;
+  border: $devBorder solid cyan;
+  width: 100%;
+  color: $fontColor;
+  padding-bottom: 2vh;
+}
+
+.text {
+  width: 50vw;
+  border: $devBorder solid pink;
+  font-size: $fontSizeTimeLabel;
+  text-align: justify;
 }
