@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'flexLayouts';
 @import 'details';
+@import 'nav';
 
 * {
   margin: 0px;
@@ -13,21 +14,28 @@
 body {
   height: 100vh;
   width: 100vw;
-  border: $devBorder solid green;
+  border: $devBorder solid blue;
   background-color: $background;
-  // overflow: hidden;
+  overflow: hidden;
+  @include flexRowCenter();
 }
 
 
-.flexColCenter {
+.centerCol {
+  width: 90vw;
+  height: 100vh;
+  @include flexColumnCenter();
+  border: $devBorder solid lime;
+}
+
+.top {
+  width: 90vw;
+  height: 100%;
+  @include flexColumnCenter();
   border: $devBorder solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.centerWrapper {
+.center {
   width: $imageWidth;
   height: $imageHeight;
   border: $devBorder solid cyan;
@@ -48,14 +56,30 @@ body {
   }
 }
 
-
-.bottomWrapper {
-  position: absolute;
-  bottom: 0%;
-  border: $devBorder solid cyan;
-  width: 100%;
-  color: $fontColor;
+.bottom {
   padding-bottom: 2vh;
+  max-width: 600px;
+  @include flexColumnCenter();
+  border: $devBorder solid green;
+  color: $fontColor;
+  font-family: 'Montserrat', monospace;
+
+  .description {
+    border: $devBorder solid pink;
+    font-size: $fontSizeTimeLabel;
+    text-align: justify;
+    .descriptionHeader {
+
+      border: $devBorder solid pink;
+      border-bottom: 1px solid $fontColor;
+      padding-bottom: .25em;
+    }
+    .descriptionText {
+      padding-top: .25em;
+
+      border: $devBorder solid pink;
+    }
+  }
 }
 
 .text {

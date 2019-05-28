@@ -1,0 +1,40 @@
+.leftCol, .rightCol {
+  width: 5vw;
+  height: 100vh;
+  border: $devBorder solid lime;
+  @include flexRowCenter();
+  border: $devBorder solid magenta;
+}
+
+.leftCol {
+  a {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg); /* Standard syntax */
+  }
+}
+
+.rightCol {
+  a {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg); /* Standard syntax */
+  }
+}
+
+
+.navArrow {
+  height: 2.5vh;
+  border: $devBorder solid cyan;
+  opacity: 0.95;
+  transition-timing-function: ease-in;
+  -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 2s;
+
+  &:hover {
+    opacity: 0.4;
+    transition-timing-function: ease-out;
+    -webkit-transition: opacity .2s; /* For Safari 3.1 to 6.0 */
+    transition: opacity .2s;
+  }
+}
