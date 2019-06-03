@@ -1,40 +1,123 @@
-.leftCol, .rightCol {
-  width: 5vw;
-  height: 100vh;
-  border: $devBorder solid lime;
-  @include flexRowCenter();
-  border: $devBorder solid magenta;
+nav {
+    @include flexRowSpaceBetween();
+    width:  100%;
+    padding-top: $navPaddingTouchTB;
+    padding-bottom: $navPaddingTouchTB;
+    padding-left: $navPaddingTouchLR;
+    padding-right: $navPaddingTouchLR;
+    font-size: (var(--fontSizeHello));
+    color: black;
+    background-color: $colorNavBackground;
+
+    a {
+      @include flexColumnCenter();
+      border: $devBorder solid red;
+      width: $navIconWidth;
+      height: $navIconHeight;
+    }
+
+    @media (pointer: fine) {
+      a {
+        width: $navIconCircle;
+        height:  $navIconCircle;
+        border-radius: 50%;
+        border: 2px solid rgba(0,0,0,0);
+
+        &:hover {
+          img {
+            filter: invert(1);
+          }
+          background-color: black;
+          border: 2px solid black;
+        }
+      }
+    }
+    
+
+
+    .leftSide {
+      @include flexRowStart();
+      width: 100%;
+      border: $devBorder solid black;
+      a {
+        margin-right: $navPaddingTouchLR;
+      }
+
+    }
+    .rightSide {
+      @include flexRowEnd();
+      border: $devBorder solid black;
+    }
+
+    .navIcon {
+      width: $navIconWidth;
+      height: $navIconHeight;
+      border: $devBorder solid orange;
+
+    }
+
+    #hello {
+      position: fixed;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      color: $colorHello;
+      text-shadow: 00px 0px 4px  white;
+      // border: $devBorder solid orange;
+    }
+
+    .navText{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: $devBorder solid magenta;
+    }
+
+    .hidden {
+      display: none;
+    }
 }
 
-.leftCol {
-  a {
-    -ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Safari */
-    transform: rotate(-90deg); /* Standard syntax */
+@media (pointer: fine) {
+  nav {
+    padding-top: $navPaddingTB;
+    padding-bottom: $navPaddingTB;
+    padding-left: $navPaddingLR;
+    padding-right: $navPaddingLR;
   }
 }
+.navArrows {
 
-.rightCol {
-  a {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg); /* Standard syntax */
+  .navArrow {
+    height: 5vh;
+    border: $devBorder solid cyan;
+    opacity: 0.95;
+    transition-timing-function: ease-in;
+    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 2s;
+
+
+    &:hover {
+      opacity: 0.4;
+      transition-timing-function: ease-out;
+      -webkit-transition: opacity .2s; /* For Safari 3.1 to 6.0 */
+      transition: opacity .2s;
+    }
   }
-}
 
-
-.navArrow {
-  height: 2.5vh;
-  border: $devBorder solid cyan;
-  opacity: 0.95;
-  transition-timing-function: ease-in;
-  -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
-  transition: opacity 2s;
-
-  &:hover {
-    opacity: 0.4;
-    transition-timing-function: ease-out;
-    -webkit-transition: opacity .2s; /* For Safari 3.1 to 6.0 */
-    transition: opacity .2s;
+  .left {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translate(0%, -50%);
   }
+  .right {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translate(0%, -50%);
+  }
+
+
 }

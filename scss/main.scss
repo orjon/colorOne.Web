@@ -11,21 +11,31 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+
 body {
   height: 100vh;
   width: 100vw;
-  border: $devBorder solid blue;
   background-color: $background;
   overflow: hidden;
   @include flexRowCenter();
 }
 
+#screenContainer {
+    width: 100%;
+    height: 100%;
+    @include flexColumnCenter;
 
-.centerCol {
-  width: 90vw;
-  height: 100vh;
-  @include flexColumnCenter();
-  border: $devBorder solid lime;
+    nav {
+      border: $devBorder solid blue;
+    }
+
+    #content {
+      width: 100%;
+      height: 100%;
+      @include flexColumnCenter();
+      border: $devBorder solid blue;
+    }
+
 }
 
 .top {
