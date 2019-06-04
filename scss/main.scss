@@ -70,6 +70,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor:pointer;
+    border: $devBorder solid lime;
   }
 
   .hidden {

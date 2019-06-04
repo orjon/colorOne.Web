@@ -290,7 +290,8 @@ body::-webkit-scrollbar {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer; }
+    cursor: pointer;
+    border: 0px solid lime; }
   .center .hidden {
     display: none; }
 
