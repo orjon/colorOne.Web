@@ -12,31 +12,22 @@ nav {
     a {
       @include flexColumnCenter();
       border: $devBorder solid red;
-      width: $navIconWidth;
-      height: $navIconHeight;
+      width: $navIconCircleSmall;
+      height: $navIconCircleSmall;
+      border-radius: 50%;
     }
 
-    @media (pointer: fine) {
-      a {
-        width: $navIconCircle;
-        height:  $navIconCircle;
-        border-radius: 50%;
-        border: 2px solid rgba(0,0,0,0);
-
-        &:hover {
-          img {
-            filter: invert(1);
-          }
-          background-color: black;
-          border: 2px solid black;
-        }
+    .current{
+      img {
+        filter: invert(1);
       }
+      background-color: black;
+      border: 2px solid black;
     }
-    
 
 
     .leftSide {
-      @include flexRowStart();
+      @include flexRowStartCenter();
       width: 100%;
       border: $devBorder solid black;
       a {
@@ -50,43 +41,54 @@ nav {
     }
 
     .navIcon {
-      width: $navIconWidth;
-      height: $navIconHeight;
+      width: $navIconWidthSmall;
+      height: $navIconHeightSmall;
       border: $devBorder solid orange;
-
-    }
-
-    #hello {
-      position: fixed;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      color: $colorHello;
-      text-shadow: 00px 0px 4px  white;
-      // border: $devBorder solid orange;
     }
 
     .navText{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      padding-left: 5px;
+      vertical-align: center;
+      font-size: $fontSizeNavSmall;
       border: $devBorder solid magenta;
     }
 
     .hidden {
       display: none;
     }
+
+    @media (pointer: fine) {
+      a {
+        width: $navIconCircle;
+        height:$navIconCircle;
+        border-radius: 50%;
+        border: 2px solid rgba(0,0,0,0);
+
+        &:hover {
+          img {
+            filter: invert(1);
+          }
+          background-color: black;
+          border: 2px solid black;
+        }
+      }
+
+      .navIcon {
+        width: $navIconWidth;
+        height: $navIconHeight;
+        border: $devBorder solid orange;
+      }
+
+      .navText{
+        padding-left: $navIconPadding;
+        font-size: $fontSizeNav;
+      }
+
+    }
+
+
 }
 
-@media (pointer: fine) {
-  nav {
-    padding-top: $navPaddingTB;
-    padding-bottom: $navPaddingTB;
-    padding-left: $navPaddingLR;
-    padding-right: $navPaddingLR;
-  }
-}
 .navArrows {
 
   .navArrow {
@@ -109,15 +111,20 @@ nav {
   .left {
     position: fixed;
     top: 50%;
-    left: 50px;
+    left: 5%;
     transform: translate(0%, -50%);
   }
   .right {
     position: fixed;
     top: 50%;
-    right: 50px;
+    right: 5%;
     transform: translate(0%, -50%);
   }
 
+}
 
+@media (min-width: 1200px) {
+  .navArrow {
+    display: block;
+  }
 }

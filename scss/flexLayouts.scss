@@ -77,6 +77,14 @@
   justify-content: flex-start;
 }
 
+@mixin flexRowStartCenter ()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flexRowSpaceBetweenCenter()
 {
   display: flex;

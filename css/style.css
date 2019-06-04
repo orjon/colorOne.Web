@@ -45,23 +45,19 @@ nav {
     justify-content: center;
     align-items: center;
     border: 0px solid red;
-    width: 35px;
-    height: 29px; }
-  @media (pointer: fine) {
-    nav a {
-      width: 39px;
-      height: 39px;
-      border-radius: 50%;
-      border: 2px solid rgba(0, 0, 0, 0); }
-      nav a:hover {
-        background-color: black;
-        border: 2px solid black; }
-        nav a:hover img {
-          filter: invert(1); } }
+    width: 29px;
+    height: 29px;
+    border-radius: 50%; }
+  nav .current {
+    background-color: black;
+    border: 2px solid black; }
+    nav .current img {
+      filter: invert(1); }
   nav .leftSide {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     width: 100%;
     border: 0px solid black; }
     nav .leftSide a {
@@ -72,31 +68,35 @@ nav {
     justify-content: flex-end;
     border: 0px solid black; }
   nav .navIcon {
-    width: 35px;
-    height: 29px;
+    width: 28px;
+    height: 23px;
     border: 0px solid orange; }
-  nav #hello {
-    position: fixed;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    color: #EEE;
-    text-shadow: 00px 0px 4px  white; }
   nav .navText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-left: 5px;
+    vertical-align: center;
+    font-size: 17px;
     border: 0px solid magenta; }
   nav .hidden {
     display: none; }
+  @media (pointer: fine) {
+    nav a {
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      border: 2px solid rgba(0, 0, 0, 0); }
+      nav a:hover {
+        background-color: black;
+        border: 2px solid black; }
+        nav a:hover img {
+          filter: invert(1); }
+    nav .navIcon {
+      width: 35px;
+      height: 29px;
+      border: 0px solid orange; }
+    nav .navText {
+      padding-left: 15px;
+      font-size: 25px; } }
 
-@media (pointer: fine) {
-  nav {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px; } }
 .navArrows .navArrow {
   height: 5vh;
   border: 0px solid cyan;
@@ -114,14 +114,17 @@ nav {
 .navArrows .left {
   position: fixed;
   top: 50%;
-  left: 50px;
+  left: 5%;
   transform: translate(0%, -50%); }
 .navArrows .right {
   position: fixed;
   top: 50%;
-  right: 50px;
+  right: 5%;
   transform: translate(0%, -50%); }
 
+@media (min-width: 1200px) {
+  .navArrow {
+    display: block; } }
 * {
   margin: 0px;
   padding: 0px;
@@ -190,7 +193,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 0px solid green;
-  color: #333;
+  color: black;
   font-family: 'Montserrat', monospace; }
   .bottom .description {
     border: 0px solid pink;
@@ -198,7 +201,7 @@ body {
     text-align: justify; }
     .bottom .description .descriptionHeader {
       border: 0px solid pink;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid black;
       padding-bottom: .25em; }
     .bottom .description .descriptionText {
       padding-top: .25em;
