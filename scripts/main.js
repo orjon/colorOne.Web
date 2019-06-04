@@ -1,6 +1,13 @@
 $(() => {
 
-  const animationSpeed= 3600
+  // const animationSpeed= 3600
+  const animationSpeed= 2400
+
+// 2000 = x1800
+// 2400 = x1500
+// 3600 = x1000
+// 3000 = x1200
+// 4000 = x900
 
   const currentPage = document.querySelector('.navText').innerHTML
   const navIcons = document.querySelectorAll('.navIcon')
