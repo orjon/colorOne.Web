@@ -2,22 +2,26 @@
 @import 'flexLayouts';
 @import 'details';
 @import 'nav';
+@import 'footer';
+@import 'stretchBox';
 
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
   user-select: none;
+  // overflow-x:hidden;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-
 body {
-  height: 100vh;
   width: 100vw;
-  background-color: $background;
-  overflow: hidden;
-  @include flexRowCenter();
+  height: 100vh;
+  color: black;
+  background-color: $colorBackground;
+  font-weight: $fontWeight;
+  background-color: $colorBackground;
 }
 
 #screenContainer {
@@ -37,6 +41,12 @@ body {
     }
 
 }
+
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 
 .top {
   width: 90vw;
@@ -66,35 +76,35 @@ body {
   }
 }
 
-.bottom {
-  padding-bottom: 2vh;
-  max-width: 600px;
-  @include flexColumnCenter();
-  border: $devBorder solid green;
-  color: $fontColor;
-  font-family: 'Montserrat', monospace;
-
-  .description {
-    border: $devBorder solid pink;
-    font-size: $fontSizeTimeLabel;
-    text-align: justify;
-    .descriptionHeader {
-
-      border: $devBorder solid pink;
-      border-bottom: 1px solid $fontColor;
-      padding-bottom: .25em;
-    }
-    .descriptionText {
-      padding-top: .25em;
-
-      border: $devBorder solid pink;
-    }
-  }
-}
-
-.text {
-  width: 50vw;
-  border: $devBorder solid pink;
-  font-size: $fontSizeTimeLabel;
-  text-align: justify;
-}
+// .bottom {
+//   padding-bottom: 2vh;
+//   max-width: 600px;
+//   @include flexColumnCenter();
+//   border: $devBorder solid green;
+//   color: $fontColor;
+//   font-family: 'Montserrat', monospace;
+//
+//   .description {
+//     border: $devBorder solid pink;
+//     font-size: $fontSizeTimeLabel;
+//     text-align: justify;
+//     .descriptionHeader {
+//
+//       border: $devBorder solid pink;
+//       border-bottom: 1px solid $fontColor;
+//       padding-bottom: .25em;
+//     }
+//     .descriptionText {
+//       padding-top: .25em;
+//
+//       border: $devBorder solid pink;
+//     }
+//   }
+// }
+//
+// .text {
+//   width: 50vw;
+//   border: $devBorder solid pink;
+//   font-size: $fontSizeTimeLabel;
+//   text-align: justify;
+// }

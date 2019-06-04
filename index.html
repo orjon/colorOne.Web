@@ -2,87 +2,54 @@
 <html lang='en' dir='ltr'>
   <head>
     <meta charset='utf-8'>
-    <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico' />
-    <title>orjon.com : Color One</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel='stylesheet' href='css/style.css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
     <script type='text/javascript' src='scripts/main.js'></script>
+    <title>orjon.com</title>
+    <link rel='shortcut icon' type='image/x-icon' href='./images/favicon.ico' />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel='stylesheet' href='./css/style.css'>
   </head>
   <body>
     <div id='screenContainer'>
       <nav>
         <div class='leftSide'>
-          <a href='../code.html'><img class='navIcon code' src='./images/nav/navCode.png'></a>
-          <a href='../design.html'><img class='navIcon design' src='./images/nav/navDesign.png'></a>
-          <a href='../electronics.html' class='current'><img class='navIcon electronics' src='./images/nav/navElectronics.png'></a>
+          <a href='./code.html'><img class='navIcon code' src='./images/nav/navCode.png'></a>
+          <a href='./design.html'><img class='navIcon design' src='./images/nav/navDesign.png'></a>
+          <a href='./electronics.html' class='current'><img class='navIcon electronics' src='./images/nav/navElectronics.png'></a>
           <div class='navText'>electronics</div>
         </div>
         <div class='rightSide'>
-          <a href='../orjon.html'><img class='navIcon face' src='./images/nav/navFace.png'></a>
+          <a href='./orjon.html'><img class='navIcon face' src='./images/nav/navFace.png'></a>
         </div>
       </nav>
 
       <div id='content'>
         <section class='top'>
-          <div class='center'>
-            <img src='./images/colorOne-background.jpg'>
-            <div class='colorFade'>
-              <div><img src='./images/colorOne-00.png'></div>
-              <div><img src='./images/colorOne-01.png'></div>
-              <div><img src='./images/colorOne-02.png'></div>
-              <div><img src='./images/colorOne-03.png'></div>
-              <div><img src='./images/colorOne-04.png'></div>
-              <div><img src='./images/colorOne-05.png'></div>
-              <div><img src='./images/colorOne-06.png'></div>
-              <div><img src='./images/colorOne-07.png'></div>
-              <div><img src='./images/colorOne-08.png'></div>
-              <div><img src='./images/colorOne-09.png'></div>
-              <div><img src='./images/colorOne-10.png'></div>
-              <div><img src='./images/colorOne-11.png'></div>
-            </div>
-            <div class='timeFade hidden'>
-              <div><img src='./images/colorOne-00t.png'></div>
-              <div><img src='./images/colorOne-01t.png'></div>
-              <div><img src='./images/colorOne-02t.png'></div>
-              <div><img src='./images/colorOne-03t.png'></div>
-              <div><img src='./images/colorOne-04t.png'></div>
-              <div><img src='./images/colorOne-05t.png'></div>
-              <div><img src='./images/colorOne-06t.png'></div>
-              <div><img src='./images/colorOne-07t.png'></div>
-              <div><img src='./images/colorOne-08t.png'></div>
-              <div><img src='./images/colorOne-09t.png'></div>
-              <div><img src='./images/colorOne-10t.png'></div>
-              <div><img src='./images/colorOne-11t.png'></div>
-              <div><img src='./images/colorOne-12t.png'></div>
-              <div><img src='./images/colorOne-13t.png'></div>
-              <div><img src='./images/colorOne-14t.png'></div>
-              <div><img src='./images/colorOne-15t.png'></div>
-              <div><img src='./images/colorOne-16t.png'></div>
-              <div><img src='./images/colorOne-17t.png'></div>
-              <div><img src='./images/colorOne-18t.png'></div>
-              <div><img src='./images/colorOne-19t.png'></div>
-              <div><img src='./images/colorOne-20t.png'></div>
-              <div><img src='./images/colorOne-21t.png'></div>
-              <div><img src='./images/colorOne-22t.png'></div>
-              <div><img src='./images/colorOne-23t.png'></div>
-            </div>
+          <div id="designImage" class='container'>
           </div>
         </section>
+
         <section class='bottom'>
           <div class='description'>
-            <div class='descriptionHeader'>Color One</div>
-            <div class='descriptionText'>Represents the time by slowly shifting through the color spectrum every 12 hours. Made with an Arduino microcontroller & custom circuitry.</div>
+            <div class='descriptionText'>Angle Desk</div>
+            <div class='descriptionTech'>Design, Visualisation, Technical Documentation : 3ds Max, V-Ray, Photoshop</div>
           </div>
         </section>
       </div>
     </div>
 
     <div class='navArrows'>
-      <a href='http://www.orjon.com/colortwo/index.html'><img class='navArrow left' src='./images/nav/navArrowLeft.png'></a>
-      <a href='http://www.orjon.com/timeframe/index.html'><img class='navArrow right' src='./images/nav/navArrowRight.png'></a>
+      <img class='navArrow left' src='./images/nav/navArrowLeft.png'>
+      <img class='navArrow right' src='./images/nav/navArrowRight.png'>
     </div>
+
+    <footer>
+      <div id='displayContact' class='text'>
+        <a href='mailto:contact@orjon.com'>contact@orjon.com</a>
+      </div>
+    </footer>
 
   </body>
 </html>
