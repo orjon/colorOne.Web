@@ -13,18 +13,51 @@ $fontSizeTimeLabel: 17px;
   width: 85%;
   max-width: 1750px;
   height: 85%;
-  background-image: url("../images/design/nouTable.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  // background-image: url("../images/colorOne-background.jpg");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 50% 50%;
   border: $devBorder solid cyan;
+
 }
 
 
 
+// .bottom {
+//   padding-bottom: 1vh;
+//   max-width: 85%;
+//   @include flexColumnCenter();
+//   border: $devBorder solid green;
+//   color: $fontColor;
+//   font-family: 'Montserrat', monospace;
+//
+//   .description {
+//     border: $devBorder solid pink;
+//     font-size: $fontSizeTimeLabel;
+//     text-align: center;
+//
+//     .descriptionText {
+//       font-size: $fontSizeNormal;
+//       padding-top: .25em;
+//       border: $devBorder solid pink;
+//     }
+//
+//     .descriptionTech {
+//       font-family: sans-serif;
+//       font-size: $fontSizeSmall;
+//       padding-top: .25em;
+//       color: $textDim;
+//       border: $devBorder solid pink;
+//     }
+//   }
+// }
+
+
 .bottom {
-  padding-bottom: 1vh;
-  max-width: 85%;
+  padding-bottom: 2vh;
+  max-width: 600px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   @include flexColumnCenter();
   border: $devBorder solid green;
   color: $fontColor;
@@ -33,20 +66,24 @@ $fontSizeTimeLabel: 17px;
   .description {
     border: $devBorder solid pink;
     font-size: $fontSizeTimeLabel;
-    text-align: center;
+    text-align: justify;
+    .descriptionHeader {
 
-    .descriptionText {
-      font-size: $fontSizeNormal;
-      padding-top: .25em;
       border: $devBorder solid pink;
+      border-bottom: 1px solid $fontColor;
+      padding-bottom: .25em;
     }
-
-    .descriptionTech {
-      font-family: sans-serif;
-      font-size: $fontSizeSmall;
+    .descriptionText {
       padding-top: .25em;
-      color: $textDim;
+
       border: $devBorder solid pink;
     }
   }
+}
+
+.text {
+  width: 50vw;
+  border: $devBorder solid pink;
+  font-size: $fontSizeTimeLabel;
+  text-align: justify;
 }
