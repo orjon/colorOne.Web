@@ -17,14 +17,6 @@ nav {
       border-radius: 50%;
     }
 
-    .current{
-      img {
-        filter: invert(1);
-      }
-      background-color: black;
-      border: 2px solid black;
-    }
-
 
     .leftSide {
       @include flexRowStartCenter();
@@ -47,15 +39,18 @@ nav {
     }
 
     .navText{
+      width: 100%;
       padding-left: 5px;
+      padding-right: 10px;
+      margin-right: 0px;
       vertical-align: center;
       font-size: $fontSizeNavSmall;
       border: $devBorder solid magenta;
-    }
+      }
 
-    .hidden {
-      display: none;
-    }
+      .hidden {
+        display: none;
+      }
 
     @media (pointer: fine) {
       a {
@@ -64,13 +59,7 @@ nav {
         border-radius: 50%;
         border: 2px solid rgba(0,0,0,0);
 
-        &:hover {
-          img {
-            filter: invert(1);
-          }
-          background-color: black;
-          border: 2px solid black;
-        }
+
       }
 
       .navIcon {
@@ -82,6 +71,10 @@ nav {
       .navText{
         padding-left: $navIconPadding;
         font-size: $fontSizeNav;
+      }
+
+      .aboutMe {
+        text-align: right;
       }
 
     }

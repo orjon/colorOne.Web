@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'flexLayouts';
-@import 'details';
 @import 'nav';
 @import 'footer';
 @import 'stretchBox';
@@ -8,7 +7,6 @@
 * {
   box-sizing: border-box;
   user-select: none;
-  // overflow-x:hidden;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -41,7 +39,6 @@ body {
     }
 
 }
-
 
 body::-webkit-scrollbar {
   width: 0 !important;
