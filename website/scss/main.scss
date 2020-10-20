@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'flexLayouts';
+@import 'nav';
+@import 'footer';
+@import 'stretchBox';
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  background-color: $colorBackground;
+  font-weight: $fontWeight;
+  background-color: $colorBackground;
+}
+
+#screenContainer {
+    width: 100%;
+    height: 100%;
+    @include flexColumnCenter;
+
+    nav {
+      border: $devBorder solid blue;
+    }
+
+    #content {
+      width: 100%;
+      height: 100%;
+      @include flexColumnCenter();
+      border: $devBorder solid blue;
+    }
+
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+
+.top {
+  width: 90vw;
+  height: 100%;
+  @include flexColumnCenter();
+  border: $devBorder solid red;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  border: $devBorder solid magenta;
+  text-align: center;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+    border: $devBorder solid lime;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
