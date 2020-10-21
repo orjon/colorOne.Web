@@ -80,39 +80,36 @@ nav {
     }
 }
 
-
 .navArrows {
 
   .navArrow {
-    height: 5vh;
+    height: 40px;
     border: $devBorder solid cyan;
-    opacity: 0.95;
+    will-change: opacity;
+    opacity: .25;
     transition-timing-function: ease-in;
-    -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
-    transition: opacity 2s;
-
-
+    -webkit-transition: opacity $navFadeOutSpeed;
+    transition: opacity $navFadeOutSpeed;
     &:hover {
-      opacity: 0.4;
+      opacity: 1;
       transition-timing-function: ease-out;
-      -webkit-transition: opacity .2s; /* For Safari 3.1 to 6.0 */
-      transition: opacity .2s;
+      -webkit-transition: opacity $navFadeInSpeed;
+      transition: opacity $navFadeInSpeed;
     }
   }
 
-  .left {
+  .left, .right  {
     position: fixed;
     top: 50%;
-    left: 5%;
-    transform: translate(0%, -50%);
-  }
-  .right {
-    position: fixed;
-    top: 50%;
-    right: 5%;
     transform: translate(0%, -50%);
   }
 
+  .left  {
+    left: 2vw;
+  }
+  .right {
+    right:2vw;
+  }
 }
 
 @media (min-width: 1200px) {

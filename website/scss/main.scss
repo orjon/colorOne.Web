@@ -13,6 +13,10 @@
   scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -70,7 +74,4 @@ body::-webkit-scrollbar {
     border: $devBorder solid lime;
   }
 
-  .hidden {
-    display: none;
-  }
 }

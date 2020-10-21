@@ -1,6 +1,5 @@
 $(() => {
 
-  // const animationSpeed= 3600
   const animationSpeed= 2400
 
 // 2000 = x1800
@@ -14,17 +13,12 @@ $(() => {
   $('.timeFade > div:gt(0)').hide()
 
 
-  $('.colorFade').click(function(){
-    $('.timeFade').toggleClass('hidden')
-  })
-
-  $('.timeFade').click(function(){
+  $('.toggle').click(() => {
     $('.timeFade').toggleClass('hidden')
   })
 
 
-
-  function colorFade() {
+  colorFade = () => {
     $('.colorFade > div:first')
       .fadeOut(animationSpeed)
       .next()
@@ -33,7 +27,7 @@ $(() => {
       .appendTo('.colorFade')
   }
 
-  function timeFade() {
+  timeFade = () => {
     $('.timeFade > div:first')
       .fadeOut(animationSpeed)
       .next()

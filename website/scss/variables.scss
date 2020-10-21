@@ -2,7 +2,8 @@ $devBorder: 0px;
 
 $fontColor: black;
 $fontSizeTimeLabel: 17px;
-
+$fontSizeHeader:24px;
+$fontSizeDescription: 16px;
 
 :root {
   --oSize: 70vh;
@@ -21,6 +22,9 @@ $mediaHeight3: 1200px;
 $navHeight: 64px;
 $navPaddingTB: 5px;
 $navPaddingLR: 5px;
+
+$navFadeOutSpeed: .3s;
+$navFadeInSpeed: .1s;
 
 $navPaddingTouchTB: 5px;
 $navPaddingTouchLR: 5px;
