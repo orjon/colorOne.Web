@@ -122,7 +122,7 @@ nav .hidden {
     border: 0px solid orange;
   }
   nav .navText {
-    padding-left: 15px;
+    padding-left: 5px;
     font-size: 25px;
   }
   nav .aboutMe {
@@ -181,7 +181,7 @@ footer #displayContact a {
   position: fixed;
   bottom: 0.5%;
   right: 0.5%;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6222222222vh;
 }
 

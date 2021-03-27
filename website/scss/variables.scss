@@ -2,7 +2,7 @@ $devBorder: 0px;
 
 $fontColor: black;
 $fontSizeTimeLabel: 17px;
-$fontSizeHeader:24px;
+$fontSizeHeader: 24px;
 $fontSizeDescription: 16px;
 
 :root {
@@ -23,8 +23,8 @@ $navHeight: 64px;
 $navPaddingTB: 5px;
 $navPaddingLR: 5px;
 
-$navFadeOutSpeed: .3s;
-$navFadeInSpeed: .1s;
+$navFadeOutSpeed: 0.3s;
+$navFadeInSpeed: 0.1s;
 
 $navPaddingTouchTB: 5px;
 $navPaddingTouchLR: 5px;
@@ -34,10 +34,9 @@ $navIconWidthSmall: 28px;
 $navIconHeightSmall: 23px;
 $navIconCircle: 39px;
 $navIconCircleSmall: 29px;
-$navIconPadding: 15px;
+$navIconPadding: 5px;
 $navHover: #999;
 $navOHeight: 35px;
-
 
 $contentPaddingSide: 20px;
 
@@ -63,12 +62,11 @@ $fontScreenReference: 73vh;
 $fontSize: ($fontScreenReference/45);
 $fontWeight: 300;
 $fontSizeNormal: 1em;
-$fontSizeSmall: .9em;
+$fontSizeSmall: 0.9em;
 $fontSizeNavSmall: 17px;
 $fontSizeNav: 25px;
 
-$colorHello: #AAA;
-
+$colorHello: #aaa;
 
 $projectDividingLines: black;
 
@@ -83,15 +81,39 @@ $fontBioText: $fontSizeNormal;
 
 $navArrowPadding: 0;
 
-.width10 {width: 10%};
-.width13 {width: 13%};
-.width15 {width: 15%};
-.width20 {width: 20%};
-.width25 {width: 25%};
-.width30 {width: 30%};
-.width40 {width: 40%};
-.width50 {width: 50%};
-.width65 {width: 65%};
-.width75 {width: 75%};
-.width90 {width: 90%};
-.width100 {width: 100%};
+.width10 {
+  width: 10%;
+}
+.width13 {
+  width: 13%;
+}
+.width15 {
+  width: 15%;
+}
+.width20 {
+  width: 20%;
+}
+.width25 {
+  width: 25%;
+}
+.width30 {
+  width: 30%;
+}
+.width40 {
+  width: 40%;
+}
+.width50 {
+  width: 50%;
+}
+.width65 {
+  width: 65%;
+}
+.width75 {
+  width: 75%;
+}
+.width90 {
+  width: 90%;
+}
+.width100 {
+  width: 100%;
+}
